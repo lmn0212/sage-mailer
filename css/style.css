@@ -124,6 +124,9 @@ h2 {
   @media screen and (max-width: 1620px) {
     .wrapper {
       width: 80%; } }
+  @media screen and (max-width: 1420px) {
+    .wrapper {
+      width: 96%; } }
 
 header .header-wrap {
   margin: 2.4rem 0 4.2rem; }
@@ -221,7 +224,7 @@ header .header-wrap {
       #principles .row .video-container video {
         margin-top: 5rem;
         border-radius: .3rem;
-        height: auto;
+        height: 100%;
         width: 90%;
         z-index: 1; }
 
@@ -459,7 +462,7 @@ header .header-wrap {
       height: 350px; }
     #faq .row .question-group {
       color: white;
-      margin-top: 0.5rem; }
+      margin-top: 1.5rem; }
       #faq .row .question-group .question h3 {
         font-family: 'Rockwell', serif;
         font-size: 1.15rem; }

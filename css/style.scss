@@ -132,6 +132,9 @@ h2 {
   @media screen and (max-width: 1620px) {
     width: 80%;
   }
+  @media screen and (max-width: 1420px) {
+    width: 96%;
+  }
 }
 header {
   .header-wrap {
@@ -265,7 +268,7 @@ header {
       video {
         margin-top: 5rem;
         border-radius: .3rem;
-        height: auto;
+        height: 100%;
         width: 90%;
         z-index: 1;
       }
@@ -540,7 +543,7 @@ header {
     }
     .question-group {
       color: white;
-      margin-top: 0.5rem;
+      margin-top: 1.5rem;
       .question {
         h3 {
           font-family: 'Rockwell', serif;
