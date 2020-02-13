@@ -483,6 +483,9 @@ header .header-wrap {
     #banner-ad .ad-bl .icon-col {
       width: 30%;
       padding: 1.5rem 0; }
+      @media screen and (max-width: 1620px) {
+        #banner-ad .ad-bl .icon-col {
+          padding: 1.5rem 1rem; } }
       #banner-ad .ad-bl .icon-col img {
         max-height: 100px;
         max-width: 108px; }
