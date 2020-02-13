@@ -106,6 +106,10 @@ h2 {
   @media screen and (max-width: 1620px) {
     .btn-full {
       width: 208px; } }
+  @media screen and (max-width: 1200px) {
+    .btn-full {
+      width: 100px;
+      font-size: 1rem; } }
 
 .btn-empty {
   font-size: 1.2rem;
@@ -115,6 +119,10 @@ h2 {
   @media screen and (max-width: 1620px) {
     .btn-empty {
       width: 208px; } }
+  @media screen and (max-width: 1200px) {
+    .btn-empty {
+      width: 100px;
+      font-size: 1rem; } }
 
 .wrapper {
   max-width: 1580px;
@@ -136,6 +144,9 @@ header .header-wrap {
     @media screen and (max-width: 1620px) {
       header .header-wrap .logo-block {
         margin-right: 0; } }
+    @media screen and (max-width: 960px) {
+      header .header-wrap .logo-block {
+        width: 19rem; } }
     header .header-wrap .logo-block img {
       max-height: 110px; }
   header .header-wrap .menu-block .nav .nav-item {
@@ -144,11 +155,19 @@ header .header-wrap {
       margin: 0 1.1rem;
       padding: 0 1rem;
       line-height: 1; }
+      @media screen and (max-width: 1200px) {
+        header .header-wrap .menu-block .nav .nav-item .nav-link {
+          margin: 0 .5rem;
+          padding: 0 .5rem;
+          font-size: 1.2rem; } }
   header .header-wrap .buttons-block {
     margin-left: auto;
     margin-bottom: -1.5rem; }
     header .header-wrap .buttons-block button {
       width: 202px; }
+      @media screen and (max-width: 1200px) {
+        header .header-wrap .buttons-block button {
+          width: 100px; } }
       header .header-wrap .buttons-block button.btn-empty {
         margin-right: 1.8rem; }
 
@@ -158,6 +177,12 @@ header .header-wrap {
     background-color: #b9c95e; }
     #banner-main .row .left-col {
       padding-right: 8.4rem; }
+      @media screen and (max-width: 1200px) {
+        #banner-main .row .left-col {
+          padding-right: 6.4rem; } }
+      @media screen and (max-width: 960px) {
+        #banner-main .row .left-col {
+          padding-right: 0; } }
       #banner-main .row .left-col h2 {
         margin-bottom: 4.4rem;
         text-align: left; }
@@ -214,6 +239,9 @@ header .header-wrap {
       color: white;
       margin-bottom: 4.4rem;
       text-align: left; }
+      @media screen and (max-width: 960px) {
+        #principles .row h2 {
+          margin-bottom: 1.4rem; } }
     #principles .row .video-container {
       position: relative; }
       #principles .row .video-container img {
@@ -227,6 +255,9 @@ header .header-wrap {
         height: 100%;
         width: 90%;
         z-index: 1; }
+        @media screen and (max-width: 1200px) {
+          #principles .row .video-container video {
+            width: 100%; } }
 
 #pricing {
   margin-bottom: 4rem; }
@@ -264,6 +295,9 @@ header .header-wrap {
         text-align: center; }
         #pricing .row .price-bl .price-wrap .img-block img {
           height: 285px; }
+          @media screen and (max-width: 960px) {
+            #pricing .row .price-bl .price-wrap .img-block img {
+              height: 130px; } }
       #pricing .row .price-bl .price-wrap .price {
         text-align: center;
         font-size: 3.2rem;
@@ -292,10 +326,17 @@ header .header-wrap {
   margin-bottom: 6.2rem; }
   #flags h2 {
     margin-bottom: 6.8rem; }
+  @media screen and (max-width: 960px) {
+    #flags .row {
+      width: 80%;
+      margin: 0 auto; } }
   #flags .row .flag {
     width: 77px;
     height: 48px;
     opacity: 0.4; }
+    @media screen and (max-width: 960px) {
+      #flags .row .flag {
+        margin-bottom: .5rem; } }
   #flags .row .fl-1 {
     background: url(../media/img/flags/f1.png) no-repeat center center;
     background-size: cover; }
@@ -399,6 +440,10 @@ header .header-wrap {
     border-radius: 10px;
     opacity: 0.4;
     z-index: -1; }
+    @media screen and (max-width: 960px) {
+      #testimonials .testimonials-car .slick-list::after {
+        height: 64%;
+        border: 1.7rem solid #b9c95e; } }
 #testimonials .testimonials-car .testimon {
   width: 300px;
   padding: 3.6rem 2.3rem;
@@ -450,6 +495,9 @@ header .header-wrap {
       text-decoration: underline;
       text-align: right;
       display: block; }
+  @media screen and (max-width: 960px) {
+    #blog .blog-col {
+      margin-bottom: 1rem; } }
 
 #faq {
   margin-bottom: 6.4rem; }
@@ -497,6 +545,9 @@ header .header-wrap {
         font-size: 2.4rem;
         line-height: 1.2;
         color: #333945; }
+    @media screen and (max-width: 960px) {
+      #banner-ad .ad-bl {
+        margin-bottom: 3rem; } }
   #banner-ad .btn-full {
     background-color: #b9c95e;
     border-color: #b9c95e;
@@ -540,5 +591,8 @@ footer {
   footer .copyright {
     margin-top: 4.5rem;
     text-align: center; }
+  @media screen and (max-width: 960px) {
+    footer {
+      padding: 5rem 0 2rem; } }
 
 /*# sourceMappingURL=style.css.map */

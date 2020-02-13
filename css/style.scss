@@ -112,6 +112,10 @@ h2 {
   @media screen and (max-width: 1620px) {
     width: 208px;
   }
+  @media screen and (max-width: 1200px) {
+    width: 100px;
+    font-size: 1rem;
+  }
 }
 
 .btn-empty {
@@ -121,6 +125,10 @@ h2 {
   padding: 1.5rem .5rem;
   @media screen and (max-width: 1620px) {
     width: 208px;
+  }
+  @media screen and (max-width: 1200px) {
+    width: 100px;
+    font-size: 1rem;
   }
 }
 
@@ -145,6 +153,9 @@ header {
       @media screen and (max-width: 1620px) {
         margin-right: 0;
       }
+      @media screen and (max-width: 960px) {
+        width: 19rem;
+      }
       img {
         max-height: 110px;
       }
@@ -157,6 +168,11 @@ header {
               margin: 0 1.1rem;
               padding: 0 1rem;
               line-height: 1;
+              @media screen and (max-width: 1200px) {
+                margin: 0 .5rem;
+                padding: 0 .5rem;
+                font-size: 1.2rem;
+              }
             }
         }
 
@@ -167,6 +183,9 @@ header {
       margin-bottom: -1.5rem;
       button {
         width: 202px;
+        @media screen and (max-width: 1200px) {
+          width: 100px;
+        }
         &.btn-empty {
           margin-right: 1.8rem;
         }
@@ -181,6 +200,12 @@ header {
     background-color: $color-green;
     .left-col {
       padding-right: 8.4rem;
+      @media screen and (max-width: 1200px) {
+        padding-right: 6.4rem;
+      }
+      @media screen and (max-width: 960px) {
+        padding-right: 0;
+      }
       h2 {
         margin-bottom: 4.4rem;
         text-align: left;
@@ -256,6 +281,9 @@ header {
       color: white;
       margin-bottom: 4.4rem;
       text-align: left;
+      @media screen and (max-width: 960px) {
+        margin-bottom: 1.4rem;
+      }
     }
     .video-container {
       position: relative;
@@ -271,6 +299,9 @@ header {
         height: 100%;
         width: 90%;
         z-index: 1;
+        @media screen and (max-width: 1200px) {
+          width: 100%;
+        }
       }
     }
   }
@@ -316,6 +347,9 @@ header {
           text-align: center;
           img {
             height: 285px;
+            @media screen and (max-width: 960px) {
+              height: 130px;
+            }
           }
         }
         .price {
@@ -360,10 +394,17 @@ header {
     margin-bottom: 6.8rem;
   }
   .row {
+    @media screen and (max-width: 960px) {
+      width: 80%;
+      margin: 0 auto;
+    }
     .flag {
       width: 77px;
       height: 48px;
       opacity: 0.4;
+      @media screen and (max-width: 960px) {
+        margin-bottom: .5rem;
+      }
     }
     @for $i from 1 through 14 {
       .fl-#{$i} {
@@ -458,6 +499,10 @@ header {
         border-radius: 10px;
         opacity: 0.4;
         z-index: -1;
+        @media screen and (max-width: 960px) {
+          height: 64%;
+          border: 1.7rem solid #b9c95e;
+        }
       }
     }
     .testimon {
@@ -527,6 +572,9 @@ header {
         display: block;
       }
     }
+    @media screen and (max-width: 960px) {
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -590,6 +638,9 @@ header {
         line-height: 1.2;
         color: $color-dark;
       }
+    }
+    @media screen and (max-width: 960px) {
+      margin-bottom: 3rem;
     }
   }
   .btn-full {
@@ -655,5 +706,8 @@ footer {
   .copyright {
     margin-top: 4.5rem;
     text-align: center;
+  }
+  @media screen and (max-width: 960px) {
+    padding: 5rem 0 2rem;
   }
 }

@@ -7,5 +7,15 @@ $(document).ready(function(){
         speed: 200,
         arrows: false,
         easing: 'easeInCubic',
+        responsive: [
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: true,
+                }
+            },
+        ]
 });
 });
