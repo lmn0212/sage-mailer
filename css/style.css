@@ -294,46 +294,46 @@ header .header-wrap {
     height: 48px;
     opacity: 0.4; }
   #flags .row .fl-1 {
-    background: url(/media/img/flags/f1.png) no-repeat center center;
+    background: url(media/img/flags/f1.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-2 {
-    background: url(/media/img/flags/f2.png) no-repeat center center;
+    background: url(media/img/flags/f2.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-3 {
-    background: url(/media/img/flags/f3.png) no-repeat center center;
+    background: url(media/img/flags/f3.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-4 {
-    background: url(/media/img/flags/f4.png) no-repeat center center;
+    background: url(media/img/flags/f4.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-5 {
-    background: url(/media/img/flags/f5.png) no-repeat center center;
+    background: url(media/img/flags/f5.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-6 {
-    background: url(/media/img/flags/f6.png) no-repeat center center;
+    background: url(media/img/flags/f6.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-7 {
-    background: url(/media/img/flags/f7.png) no-repeat center center;
+    background: url(media/img/flags/f7.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-8 {
-    background: url(/media/img/flags/f8.png) no-repeat center center;
+    background: url(media/img/flags/f8.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-9 {
-    background: url(/media/img/flags/f9.png) no-repeat center center;
+    background: url(media/img/flags/f9.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-10 {
-    background: url(/media/img/flags/f10.png) no-repeat center center;
+    background: url(media/img/flags/f10.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-11 {
-    background: url(/media/img/flags/f11.png) no-repeat center center;
+    background: url(media/img/flags/f11.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-12 {
-    background: url(/media/img/flags/f12.png) no-repeat center center;
+    background: url(media/img/flags/f12.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-13 {
-    background: url(/media/img/flags/f13.png) no-repeat center center;
+    background: url(media/img/flags/f13.png) no-repeat center center;
     background-size: cover; }
   #flags .row .fl-14 {
-    background: url(/media/img/flags/f14.png) no-repeat center center;
+    background: url(media/img/flags/f14.png) no-repeat center center;
     background-size: cover; }
 
 #try-prop {
@@ -433,7 +433,7 @@ header .header-wrap {
     #blog h2 span {
       font-size: 2.4rem; }
   #blog .blog-col .image-cont {
-    background: url(/media/img/Clip_group.png) no-repeat center center;
+    background: url(media/img/Clip_group.png) no-repeat center center;
     background-size: cover;
     width: 14.3rem;
     height: 12.5rem;

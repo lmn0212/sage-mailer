@@ -364,7 +364,7 @@ header {
     }
     @for $i from 1 through 14 {
       .fl-#{$i} {
-        background: url(/media/img/flags/f#{$i}.png) no-repeat center center;
+        background: url(media/img/flags/f#{$i}.png) no-repeat center center;
         background-size: cover;
       }
     }
@@ -506,7 +506,7 @@ header {
   }
   .blog-col {
     .image-cont {
-      background: url(/media/img/Clip_group.png) no-repeat center center;
+      background: url(media/img/Clip_group.png) no-repeat center center;
       background-size: cover;
       width: 14.3rem;
       height: 12.5rem;
