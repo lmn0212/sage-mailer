@@ -26,9 +26,44 @@
         <![endif]-->
         <header>
             <div class="wrapper">
-                <div class="header-wrap d-flex align-items-end">
+                <!--<div class="header-wrap d-flex align-items-end">-->
+                    <!--<div class="logo-block"><img class="img-fluid" src="media/img/el.svg" alt="Logo"></div>-->
+                    <!--<div class="menu-block">-->
+                        <!--<ul class="nav">-->
+                            <!--<li class="nav-item">-->
+                                <!--<a class="nav-link" href="#solutions">Solutions</a>-->
+                            <!--</li>-->
+                            <!--<li class="nav-item">-->
+                                <!--<a class="nav-link" href="#pricing">Pricing</a>-->
+                            <!--</li>-->
+                            <!--<li class="nav-item">-->
+                                <!--<a class="nav-link" href="#blog">Blog</a>-->
+                            <!--</li>-->
+                            <!--<li class="nav-item">-->
+                                <!--<a class="nav-link" href="#faq">FAQ</a>-->
+                            <!--</li>-->
+                        <!--</ul>-->
+                    <!--</div>-->
+                    <!--<div class="buttons-block">-->
+                        <!--<button type="button" class="btn btn-outline-dark btn-empty">Start free trial</button>-->
+                        <!--<button type="button" class="btn btn-full">Log in</button>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <nav class="navbar navbar-expand-md d-flex align-items-end">
                     <div class="logo-block"><img class="img-fluid" src="media/img/el.svg" alt="Logo"></div>
-                    <div class="menu-block">
+                    <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div id="hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div id="cross">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="collapse navbar-collapse menu-block align-items-end" id="navbarSupportedContent">
                         <ul class="nav">
                             <li class="nav-item">
                                 <a class="nav-link" href="#solutions">Solutions</a>
@@ -43,18 +78,18 @@
                                 <a class="nav-link" href="#faq">FAQ</a>
                             </li>
                         </ul>
+                        <div class="buttons-block">
+                            <button type="button" class="btn btn-outline-dark btn-empty">Start free trial</button>
+                            <button type="button" class="btn btn-full">Log in</button>
+                        </div>
                     </div>
-                    <div class="buttons-block">
-                        <button type="button" class="btn btn-outline-dark btn-empty">Start free trial</button>
-                        <button type="button" class="btn btn-full">Log in</button>
-                    </div>
-                </div>
+                </nav>
             </div>
         </header>
         <section id="banner-main">
             <div class="wrapper">
                 <div class="row painted-block">
-                    <div class="col-6 left-col">
+                    <div class="col-md-6 col-12 left-col">
                         <h2>Simple seller tool<br>
                             to increase your<br>
                             <span>Amazon sales</span></h2>
@@ -67,7 +102,7 @@
                             <button type="button" class="btn btn-outline-dark btn-empty">Try for free</button>
                         </div>
                     </div>
-                    <div class="col-6"></div>
+                    <div class="col-md-6"></div>
                 </div>
             </div>
         </section>
@@ -80,7 +115,9 @@
                             <img class="img-fluid" src="media/img/solutions/zoom_ico.svg" alt="monitoring">
                         </div>
                         <div class="info-container">
-                            <h3 class="d-flex align-items-end">Review monitoring</h3>
+                            <h3 class="d-flex align-items-end">
+                                <img class="img-fluid" src="media/img/solutions/zoom_ico.svg" alt="monitoring">
+                                Review monitoring</h3>
                             <p class="info-text">Track your Amazon feedback and reviews for unlimited ASINs on a single screen.
                                 Receive real-time notifications about new opinions.
                             </p>
@@ -92,7 +129,9 @@
                             <img class="img-fluid" src="media/img/solutions/invoice_ico.svg" alt="invoices">
                         </div>
                         <div class="info-container">
-                            <h3 class="d-flex align-items-end">Automatic invoices</h3>
+                            <h3 class="d-flex align-items-end">
+                                <img class="img-fluid" src="media/img/solutions/invoice_ico.svg" alt="invoices">
+                                Automatic invoices</h3>
                             <p class="info-text">Get rid of the invoice routine on EU Amazon.
                                 Our Amazon invoice generator automatically calculates your VAT rates.
                             </p>
@@ -104,7 +143,9 @@
                             <img class="img-fluid" src="media/img/solutions/campaign_ico.svg" alt="email">
                         </div>
                         <div class="info-container">
-                            <h3 class="d-flex align-items-end">Unlimited email campaigns</h3>
+                            <h3 class="d-flex align-items-end">
+                                <img class="img-fluid" src="media/img/solutions/campaign_ico.svg" alt="email">
+                                Unlimited email campaigns</h3>
                             <p class="info-text">Create automated email campaigns in a few clicks to get more  positive feedback.
                                 Use our ready templates with high open rates.
                             </p>
@@ -116,7 +157,9 @@
                             <img class="img-fluid" src="media/img/solutions/abtest_ico.svg" alt="testing">
                         </div>
                         <div class="info-container">
-                            <h3 class="d-flex align-items-end">A/B Testing</h3>
+                            <h3 class="d-flex align-items-end">
+                                <img class="img-fluid" src="media/img/solutions/abtest_ico.svg" alt="testing">
+                                A/B Testing</h3>
                             <p class="info-text">Test different email subject lines and delivery settings at the same time.
                                 Find out which ones work best for your audience.
                             </p>
@@ -128,7 +171,9 @@
                             <img class="img-fluid" src="media/img/solutions/responce_ico.svg" alt="monitoring">
                         </div>
                         <div class="info-container">
-                            <h3 class="d-flex align-items-end">Response Center</h3>
+                            <h3 class="d-flex align-items-end">
+                                <img class="img-fluid" src="media/img/solutions/responce_ico.svg" alt="monitoring">
+                                Response Center</h3>
                             <p class="info-text">Test different email subject lines and delivery settings at the same time.
                                 Find out which ones work best for your audience.
                             </p>
@@ -140,7 +185,9 @@
                             <img class="img-fluid" src="media/img/solutions/mplaces_ico.svg" alt="monitoring">
                         </div>
                         <div class="info-container">
-                            <h3 class="d-flex align-items-end">Multiple marketplaces</h3>
+                            <h3 class="d-flex align-items-end">
+                                <img class="img-fluid" src="media/img/solutions/mplaces_ico.svg" alt="monitoring">
+                                Multiple marketplaces</h3>
                             <p class="info-text">Add all the available marketplaces for no extra charge!
                                 Use our multilingual templates to sell worldwide without effort.
                             </p>
@@ -242,6 +289,77 @@
                         </div>
                     </div>
                 </div>
+                <div class="wrap-car">
+                    <div class="price-carousel">
+                        <div class="price-bl">
+                            <div class="price-wrap">
+                                <h3>Ultra</h3>
+                                <div class="img-block">
+                                    <img class="img-fluid" src="media/img/pricing/ultra.svg" alt="">
+                                </div>
+                                <p class="price">100 $</p>
+                                <p class="price-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="btn btn-full">
+                                    Pick a plan
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price-bl">
+                            <p class="mark-popular">
+                                Most Popular!
+                            </p>
+                            <div class="price-wrap">
+                                <h3>Pro</h3>
+                                <div class="img-block">
+                                    <img class="img-fluid" src="media/img/pricing/pro.svg" alt="">
+                                </div>
+                                <p class="price">25 $</p>
+                                <p class="price-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="btn btn-full">
+                                    Pick a plan
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price-bl">
+                            <div class="price-wrap">
+                                <h3>Basic</h3>
+                                <div class="img-block">
+                                    <img class="img-fluid" src="media/img/pricing/basic.svg" alt="">
+                                </div>
+                                <p class="price">10 $</p>
+                                <p class="price-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="btn btn-full">
+                                    Pick a plan
+                                </button>
+                            </div>
+                        </div>
+                        <div class="price-bl">
+                            <div class="price-wrap">
+                                <h3>Free</h3>
+                                <div class="img-block">
+                                    <img class="img-fluid" src="media/img/pricing/free.svg" alt="">
+                                </div>
+                                <p class="price">0 $</p>
+                                <p class="price-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <button class="btn btn-full">
+                                    Try for free
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
         <section id="flags">
@@ -272,7 +390,7 @@
                     <div class="col-lg-3 col-md-6 illustration">
                         <img class="img-fluid" src="media/img/spaceman.svg" alt="spacement">
                     </div>
-                    <div class="col-lg-4 col-md-6 free-benefits">
+                    <div class="col-lg-4 col-md-6 col-12 free-benefits">
                         <h3>Try our Ultra plan<br>
                             for free (21-day trial):
                         </h3>
@@ -286,11 +404,11 @@
                             <li>all marketplaces</li>
                         </ul>
                     </div>
-                    <div class="col-lg-5 chooser">
+                    <div class="col-lg-5 col-12 chooser">
                         <img class="img-fluid" src="media/img/stamp100.svg" alt="stamp">
-                        <div class="btn-container d-flex justify-content-between mb-3">
-                            <button class="btn btn-full">Try for free</button>
-                            <button class="btn btn-full">Check prices</button>
+                        <div class="btn-container d-flex flex-md-row flex-column justify-content-md-between align-items-center mb-3">
+                            <button class="btn btn-full order-md-1 order-2">Try for free</button>
+                            <button class="btn btn-full order-md-2 order-1 mb-3 mb-md-0">Check prices</button>
                         </div>
                         <p class="remark">* No credit card required</p>
                     </div>
@@ -304,6 +422,7 @@
                     <div class="testimon d-flex">
                         <div class="icon-col">
                             <img class="img-fluid" src="media/img/man.svg" alt="monitoring">
+                            <p class="img-name">Adrian K.</p>
                         </div>
                         <div class="ad-container">
                             <p>
@@ -319,6 +438,7 @@
                     <div class="testimon d-flex">
                         <div class="icon-col">
                             <img class="img-fluid" src="media/img/man.svg" alt="monitoring">
+                            <p class="img-name">George P.</p>
                         </div>
                         <div class="ad-container">
                             <p>
@@ -334,6 +454,7 @@
                     <div class="testimon d-flex">
                         <div class="icon-col">
                             <img class="img-fluid" src="media/img/man.svg" alt="monitoring">
+                            <p class="img-name">Adrian P.</p>
                         </div>
                         <div class="ad-container">
                             <p>
@@ -349,6 +470,7 @@
                     <div class="testimon d-flex">
                         <div class="icon-col">
                             <img class="img-fluid" src="media/img/man.svg" alt="monitoring">
+                            <p class="img-name">Lois P.</p>
                         </div>
                         <div class="ad-container">
                             <p>
@@ -398,14 +520,15 @@
         <section id="faq">
             <div class="wrapper">
                 <div class="row painted-block">
-                    <div class="col-3">
+                    <div class="col-md-3 col-12 mb-md-0 mb-3">
                         <h2>FAQ</h2>
-                        <img class="img-fluid" src="media/img/faq.svg" alt="monitoring">
+                        <img id="monitoring-img" class="img-fluid" src="media/img/faq.svg" alt="monitoring">
                     </div>
-                    <div class="col-9">
+                    <div class="col-md-9 col-12">
                         <div class="question-group">
                             <div class="question">
-                                <div id="headOne">
+                                <div id="headOne" class="d-flex">
+                                    <img class="arrow-collapse" src="media/img/arrow.svg" alt="arrow">
                                     <h3 class="mb-3" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true">
                                         1. Is SageMailer compliant with Amazon Terms of Use?
                                     </h3>
@@ -419,7 +542,8 @@
                                 </div>
                             </div>
                             <div class="question">
-                                <div id="headTwo">
+                                <div id="headTwo" class="d-flex">
+                                    <img class="arrow-collapse" src="media/img/arrow.svg" alt="arrow">
                                     <h3 class="mb-3" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true">
                                         2. Can your tool help remove negative Amazon feedback & reviews?
                                     </h3>
@@ -434,7 +558,8 @@
                                 </div>
                             </div>
                             <div class="question">
-                                <div id="headThree">
+                                <div id="headThree" class="d-flex">
+                                    <img class="arrow-collapse" src="media/img/arrow.svg" alt="arrow">
                                     <h3 class="mb-3" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true">
                                         3. How many Products can I monitor for reviews?
                                     </h3>
@@ -448,7 +573,8 @@
                                 </div>
                             </div>
                             <div class="question">
-                                <div id="headFour">
+                                <div id="headFour" class="d-flex">
+                                    <img class="arrow-collapse" src="media/img/arrow.svg" alt="arrow">
                                     <h3 class="mb-3" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true">
                                         4. What's included in the free trial?
                                     </h3>
