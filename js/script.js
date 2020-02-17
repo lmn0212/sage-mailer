@@ -26,8 +26,6 @@ $(document).ready(function(){
     });
     $('.price-carousel').slick({
         infinite:true,
-        centerMode: true,
-        centerPadding: '0',
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,

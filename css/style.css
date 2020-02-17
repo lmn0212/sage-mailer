@@ -82,6 +82,11 @@ h2 {
   text-align: center; }
   h2 span {
     font-family: "Rockwell", serif; }
+  @media screen and (max-width: 767px) {
+    h2 {
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+      box-shadow: none; } }
 
 .row {
   margin: 0; }
@@ -108,8 +113,8 @@ h2 {
       width: 208px; } }
   @media screen and (max-width: 1200px) {
     .btn-full {
-      width: 100px;
-      font-size: 1rem; } }
+      width: 180px;
+      font-size: 1.2rem; } }
   @media screen and (max-width: 767px) {
     .btn-full {
       width: 160px; } }
@@ -124,8 +129,8 @@ h2 {
       width: 208px; } }
   @media screen and (max-width: 1200px) {
     .btn-empty {
-      width: 100px;
-      font-size: 1rem; } }
+      width: 180px;
+      font-size: 1.2rem; } }
   @media screen and (max-width: 767px) {
     .btn-empty {
       width: 160px; } }
@@ -256,6 +261,15 @@ header .navbar {
         @media screen and (max-width: 1200px) {
           header .navbar .buttons-block button.btn-empty {
             margin-right: 1.2rem; } }
+      @media screen and (max-width: 1620px) {
+        header .navbar .buttons-block button {
+          width: 180px; } }
+      @media screen and (max-width: 1200px) {
+        header .navbar .buttons-block button {
+          font-size: 1rem; } }
+      @media screen and (max-width: 990px) {
+        header .navbar .buttons-block button {
+          width: 105px; } }
 
 #banner-main {
   margin-bottom: 2.5rem; }
@@ -307,6 +321,12 @@ header .navbar {
     @media screen and (max-width: 767px) {
       #solutions .info-bl .info-container {
         margin: 0 auto; } }
+    @media screen and (max-width: 568px) {
+      #solutions .info-bl .info-container {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        width: 90%; } }
     #solutions .info-bl .info-container h3 {
       font-family: "Rockwell", serif;
       font-size: 2.4rem;
@@ -367,27 +387,37 @@ header .navbar {
     #pricing .row {
       display: none; } }
   #pricing .wrap-car {
-    background-color: #e4c5d6; }
-    #pricing .wrap-car .price-carousel {
-      display: none; }
-      @media screen and (max-width: 767px) {
-        #pricing .wrap-car .price-carousel {
-          display: block;
-          width: 70%;
-          margin: 0 auto; } }
-      #pricing .wrap-car .price-carousel .slick-arrow {
-        position: absolute;
-        top: 20%;
-        color: white;
-        font-size: 15rem; }
-      #pricing .wrap-car .price-carousel .slick-prev {
-        left: -7%; }
-        #pricing .wrap-car .price-carousel .slick-prev::before {
-          content: "\2039"; }
-      #pricing .wrap-car .price-carousel .slick-next {
-        right: -7%; }
-        #pricing .wrap-car .price-carousel .slick-next::before {
-          content: "\203A"; }
+    display: none;
+    background-color: #e4c5d6;
+    height: 755px;
+    position: absolute;
+    width: 100%;
+    margin: 2.1rem auto; }
+    @media screen and (max-width: 767px) {
+      #pricing .wrap-car {
+        display: block; } }
+  #pricing .price-carousel {
+    display: none;
+    width: 70%;
+    margin: 0 auto; }
+    @media screen and (max-width: 767px) {
+      #pricing .price-carousel {
+        display: block; } }
+    #pricing .price-carousel .slick-list {
+      padding: 2rem 0 !important; }
+    #pricing .price-carousel .slick-arrow {
+      position: absolute;
+      top: 20%;
+      color: white;
+      font-size: 15rem; }
+    #pricing .price-carousel .slick-prev {
+      left: -12%; }
+      #pricing .price-carousel .slick-prev::before {
+        content: "\2039"; }
+    #pricing .price-carousel .slick-next {
+      right: -12%; }
+      #pricing .price-carousel .slick-next::before {
+        content: "\203A"; }
   #pricing .price-bl {
     width: 24%;
     border-radius: .3rem;
@@ -410,7 +440,8 @@ header .navbar {
       display: block;
       text-align: center;
       position: absolute;
-      width: 100%;
+      left: .2%;
+      width: 99.4%;
       top: -1.5rem;
       font-size: 1.5rem;
       line-height: 1;
@@ -456,14 +487,18 @@ header .navbar {
       background-color: #b9c95e;
       border-color: #b9c95e;
       color: black; }
+      #pricing .price-bl:last-of-type .price-wrap .btn-full:hover {
+        background-color: #333945;
+        border-color: #333945;
+        color: white; }
 
 #flags {
   margin-bottom: 6.2rem; }
   #flags h2 {
     margin-bottom: 6.8rem; }
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 1200px) {
     #flags .row {
-      width: 80%;
+      width: 70%;
       margin: 0 auto; } }
   #flags .row .flag {
     width: 77px;
@@ -473,47 +508,130 @@ header .navbar {
       #flags .row .flag {
         margin-bottom: .5rem; } }
   #flags .row .fl-1 {
-    background: url(../media/img/flags/f1.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(0*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-2 {
-    background: url(../media/img/flags/f2.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(1*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-3 {
-    background: url(../media/img/flags/f3.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(2*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-4 {
-    background: url(../media/img/flags/f4.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(3*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-5 {
-    background: url(../media/img/flags/f5.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(4*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-6 {
-    background: url(../media/img/flags/f6.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(5*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-7 {
-    background: url(../media/img/flags/f7.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(6*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-8 {
-    background: url(../media/img/flags/f8.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(7*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-9 {
-    background: url(../media/img/flags/f9.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(8*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-10 {
-    background: url(../media/img/flags/f10.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(9*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-11 {
-    background: url(../media/img/flags/f11.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(10*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-12 {
-    background: url(../media/img/flags/f12.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(11*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-13 {
-    background: url(../media/img/flags/f13.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(12*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
   #flags .row .fl-14 {
-    background: url(../media/img/flags/f14.png) no-repeat center center;
-    background-size: cover; }
+    background: url(../media/img/flagzz.svg) no-repeat;
+    background-position-x: calc(13*(-108px) - 5px);
+    background-position-y: -9px;
+    background-size: 1500px; }
+  #flags .row .fl-9 {
+    background-position-x: calc(8*(-108px) + 3px); }
+  #flags .row .fl-10 {
+    background-position-x: calc(9*(-108px) + 3px); }
+  #flags .row .fl-11 {
+    background-position-x: calc(10*(-108px) + 3px); }
+  #flags .row .fl-12 {
+    background-position-x: calc(11*(-108px) + 2px); }
+  #flags .row .fl-13 {
+    background-position-x: calc(12*(-108px) + 2px); }
+  #flags .row .fl-14 {
+    background-position-x: calc(13*(-108px) + 2px); }
+  @media screen and (max-width: 1200px) {
+    #flags .row .fl-1 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-2 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-3 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-4 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-5 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-6 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-7 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-8 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-9 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-10 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-11 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-12 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-13 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; }
+    #flags .row .fl-14 {
+      margin-right: 1rem;
+      margin-bottom: 1rem; } }
 
 #try-prop {
   margin-bottom: 8.7rem; }
@@ -562,6 +680,10 @@ header .navbar {
       background-color: #b9c95e;
       border-color: #b9c95e;
       color: black; }
+      #try-prop .row .chooser .btn-container .btn-full:first-of-type:hover {
+        background-color: #333945;
+        border-color: #333945;
+        color: white; }
     @media screen and (max-width: 1620px) {
       #try-prop .row .chooser .btn-container .btn-full {
         width: 48%; } }
@@ -602,9 +724,12 @@ header .navbar {
       align-items: center; } }
 #testimonials .testimonials-car .testimon {
   width: 300px;
-  padding: 3.6rem 2.3rem;
+  padding: 5.6rem 3rem;
   opacity: 0.4;
   background-color: white; }
+  @media screen and (max-width: 1200px) {
+    #testimonials .testimonials-car .testimon {
+      padding: 5.6rem 3rem 4rem; } }
   @media screen and (max-width: 767px) {
     #testimonials .testimonials-car .testimon {
       padding: 3.6rem 2rem;
@@ -612,9 +737,13 @@ header .navbar {
       border-radius: 1rem; } }
   #testimonials .testimonials-car .testimon.slick-current {
     transform: scale(1.4);
+    padding: 6.6rem 3rem 1rem;
     opacity: 0.8;
     position: relative;
     z-index: 1; }
+    @media screen and (max-width: 1200px) {
+      #testimonials .testimonials-car .testimon.slick-current {
+        padding: 7rem 3rem 0; } }
     @media screen and (max-width: 767px) {
       #testimonials .testimonials-car .testimon.slick-current {
         transform: scale(1);
@@ -757,6 +886,13 @@ header .navbar {
     margin: 0 auto;
     display: block;
     color: black; }
+    #banner-ad .btn-full:hover {
+      background-color: #333945;
+      border-color: #333945;
+      color: white; }
+    @media screen and (max-width: 960px) {
+      #banner-ad .btn-full {
+        width: 30%; } }
 
 footer {
   background-color: #333945;
