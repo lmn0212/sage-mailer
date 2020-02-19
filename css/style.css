@@ -93,7 +93,9 @@ h2 {
 
 .painted-block {
   padding: 2.8rem 2.5rem 4.4rem;
-  border-radius: 2rem; }
+  border-radius: 2rem;
+  background-color: #95165b;
+  color: white; }
   @media screen and (max-width: 767px) {
     .painted-block {
       border-radius: 0; } }
@@ -317,6 +319,7 @@ header .navbar {
 #banner-main {
   margin-bottom: 2.5rem; }
   #banner-main .row {
+    color: #3b3d42;
     background-color: #b9d84a; }
     #banner-main .row .left-col {
       padding-right: 8.4rem; }
@@ -430,40 +433,37 @@ header .navbar {
 
 #principles {
   margin-bottom: 4rem; }
-  #principles .row {
-    background-color: #95165b; }
-    #principles .row h2 {
-      color: white;
-      margin-bottom: 4.4rem;
-      text-align: left; }
-      @media screen and (max-width: 960px) {
-        #principles .row h2 {
-          margin-bottom: 1.4rem; } }
-    #principles .row .video-container {
-      position: relative; }
-      #principles .row .video-container #plane-img {
-        position: absolute;
-        right: 4%;
-        top: 0;
-        height: 8.9rem; }
-      #principles .row .video-container #video-scr {
-        margin-top: 5rem;
-        border-radius: .3rem;
-        height: 100%;
-        width: 90%;
-        z-index: 1; }
-        @media screen and (max-width: 1200px) {
-          #principles .row .video-container #video-scr {
-            width: 100%; } }
-      #principles .row .video-container video {
-        margin-top: 5rem;
-        border-radius: .3rem;
-        height: 100%;
-        width: 90%;
-        z-index: 1; }
-        @media screen and (max-width: 1200px) {
-          #principles .row .video-container video {
-            width: 100%; } }
+  #principles .row h2 {
+    margin-bottom: 4.4rem;
+    text-align: left; }
+    @media screen and (max-width: 960px) {
+      #principles .row h2 {
+        margin-bottom: 1.4rem; } }
+  #principles .row .video-container {
+    position: relative; }
+    #principles .row .video-container #plane-img {
+      position: absolute;
+      right: 4%;
+      top: 0;
+      height: 8.9rem; }
+    #principles .row .video-container #video-scr {
+      margin-top: 5rem;
+      border-radius: .3rem;
+      height: 100%;
+      width: 90%;
+      z-index: 1; }
+      @media screen and (max-width: 1200px) {
+        #principles .row .video-container #video-scr {
+          width: 100%; } }
+    #principles .row .video-container video {
+      margin-top: 5rem;
+      border-radius: .3rem;
+      height: 100%;
+      width: 90%;
+      z-index: 1; }
+      @media screen and (max-width: 1200px) {
+        #principles .row .video-container video {
+          width: 100%; } }
 
 #pricing {
   margin-bottom: 4rem; }
@@ -987,12 +987,28 @@ header .navbar {
   margin-bottom: 7.8rem; }
   @media screen and (max-width: 767px) {
     #blog {
+      margin-bottom: 4.5rem; } }
+  @media screen and (max-width: 767px) {
+    #blog.part-page {
       display: none; } }
   #blog h2 {
     text-align: center;
     margin-bottom: 5.6rem; }
     #blog h2 span {
       font-size: 2.4rem; }
+  #blog h3 {
+    font-family: 'Rockwell', serif;
+    font-size: 2.5rem; }
+  #blog .main-img {
+    width: 100%; }
+    @media screen and (max-width: 767px) {
+      #blog .main-img {
+        margin-bottom: 2rem; } }
+  #blog .main-article {
+    margin-bottom: 7.5rem; }
+    @media screen and (max-width: 767px) {
+      #blog .main-article {
+        margin-bottom: 4.5rem; } }
   #blog .blog-col .image-cont {
     background: url(../media/img/Clip_group.png) no-repeat center center;
     background-size: cover;
@@ -1017,39 +1033,41 @@ header .navbar {
   @media screen and (max-width: 350px) {
     #faq {
       margin-bottom: 3.4rem; } }
-  #faq .row {
-    background-color: #95165b; }
-    #faq .row h2 {
-      color: white;
-      margin-bottom: 4.4rem; }
-    #faq .row #monitoring-img {
-      height: 350px; }
-      @media screen and (max-width: 767px) {
-        #faq .row #monitoring-img {
-          margin: 0 auto;
-          display: block; } }
-      @media screen and (max-width: 350px) {
-        #faq .row #monitoring-img {
-          height: 260px; } }
-    #faq .row .question-group {
-      color: white;
-      margin-top: 1.7rem; }
-      #faq .row .question-group .question .arrow-collapse {
-        height: 1rem;
-        margin-right: 1rem; }
-      #faq .row .question-group .question h3 {
-        font-family: 'Rockwell', serif;
-        font-size: 1.15rem;
-        line-height: 1; }
-      #faq .row .question-group .question p {
-        font-size: 1.15rem;
-        padding: 1.1rem 5.1rem 1rem;
-        text-align: justify; }
-        @media screen and (max-width: 450px) {
-          #faq .row .question-group .question p {
-            padding: 1.1rem 1.1rem 1rem; } }
-      #faq .row .question-group .question:first-of-type .arrow-collapse, #faq .row .question-group .question:nth-of-type(2) .arrow-collapse {
-        transform: rotate(90deg); }
+  #faq .row h2 {
+    margin-bottom: 4.4rem; }
+  #faq .row #monitoring-img {
+    height: 350px; }
+    @media screen and (max-width: 767px) {
+      #faq .row #monitoring-img {
+        margin: 0 auto;
+        display: block; } }
+    @media screen and (max-width: 350px) {
+      #faq .row #monitoring-img {
+        height: 260px; } }
+  #faq .row #faq-img {
+    max-height: 355px;
+    width: 100%; }
+    @media screen and (max-width: 767px) {
+      #faq .row #faq-img {
+        display: none; } }
+  #faq .row .question-group {
+    margin-top: 1.7rem; }
+    #faq .row .question-group .question .arrow-collapse {
+      height: 1rem;
+      margin-right: 1rem; }
+    #faq .row .question-group .question h3 {
+      font-family: 'Rockwell', serif;
+      font-size: 1.15rem;
+      line-height: 1; }
+    #faq .row .question-group .question p {
+      font-size: 1.15rem;
+      padding: 1.1rem 5.1rem 1rem;
+      text-align: justify; }
+      @media screen and (max-width: 450px) {
+        #faq .row .question-group .question p {
+          padding: 1.1rem 1.1rem 1rem; } }
+    #faq .row .question-group .question:first-of-type .arrow-collapse, #faq .row .question-group .question:nth-of-type(2) .arrow-collapse {
+      transform: rotate(90deg); }
 
 #banner-ad {
   margin-bottom: 4.6rem; }
@@ -1187,5 +1205,25 @@ footer {
   padding-top: 3.8rem; }
 #pricing-plan .btn-full {
   margin: 2.7rem auto 5.8rem; }
+
+#feature {
+  margin-bottom: 12rem; }
+  @media screen and (max-width: 767px) {
+    #feature {
+      margin-bottom: 6rem; } }
+  #feature img {
+    width: 100%; }
+    @media screen and (max-width: 767px) {
+      #feature img {
+        height: 200px; } }
+  #feature h2 {
+    text-align: left;
+    color: white; }
+  #feature p {
+    color: white;
+    font-size: 1.15rem; }
+  #feature .pretext {
+    font-size: 1.5rem;
+    margin: 3.8rem 0; }
 
 /*# sourceMappingURL=style.css.map */

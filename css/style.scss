@@ -98,6 +98,8 @@ h2 {
 .painted-block {
   padding: 2.8rem 2.5rem 4.4rem;
   border-radius: 2rem;
+  background-color: $color-main;
+  color: white;
   @media screen and (max-width: 767px) {
     border-radius: 0;
   }
@@ -370,6 +372,7 @@ header {
 #banner-main {
   margin-bottom: 2.5rem;
   .row {
+    color: #3b3d42;
     background-color: rgb(185,216,74);
     .left-col {
       padding-right: 8.4rem;
@@ -507,9 +510,7 @@ header {
 #principles {
   margin-bottom: 4rem;
   .row {
-    background-color: $color-main;
     h2 {
-      color: white;
       margin-bottom: 4.4rem;
       text-align: left;
       @media screen and (max-width: 960px) {
@@ -1055,13 +1056,34 @@ header {
 #blog {
   margin-bottom: 7.8rem;
   @media screen and (max-width: 767px) {
-    display: none;
+    margin-bottom: 4.5rem;
+  }
+  @media screen and (max-width: 767px) {
+    &.part-page {
+      display: none;
+    }
   }
   h2 {
     text-align: center;
     margin-bottom: 5.6rem;
     span {
       font-size: 2.4rem;
+    }
+  }
+  h3 {
+    font-family: 'Rockwell', serif;
+    font-size: 2.5rem;
+  }
+  .main-img {
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 2rem;
+    }
+  }
+  .main-article {
+    margin-bottom: 7.5rem;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 4.5rem;
     }
   }
   .blog-col {
@@ -1096,9 +1118,7 @@ header {
     margin-bottom: 3.4rem;
   }
   .row {
-    background-color: $color-main;
     h2 {
-      color: white;
       margin-bottom: 4.4rem;
     }
     #monitoring-img {
@@ -1111,8 +1131,14 @@ header {
         height: 260px;
       }
     }
+    #faq-img {
+      max-height: 355px;
+      width: 100%;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+    }
     .question-group {
-      color: white;
       margin-top: 1.7rem;
       .question {
         .arrow-collapse {
@@ -1321,5 +1347,29 @@ footer {
   }
   .btn-full {
     margin: 2.7rem auto 5.8rem;
+  }
+}
+#feature {
+  margin-bottom: 12rem;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 6rem;
+  }
+  img {
+    width: 100%;
+    @media screen and (max-width: 767px) {
+      height: 200px;
+    }
+  }
+  h2 {
+    text-align: left;
+    color: white;
+  }
+  p {
+    color: white;
+    font-size: 1.15rem;
+  }
+  .pretext {
+    font-size: 1.5rem;
+    margin: 3.8rem 0;
   }
 }
