@@ -315,7 +315,7 @@ header .navbar {
 #banner-main {
   margin-bottom: 2.5rem; }
   #banner-main .row {
-    background-color: #b9c95e; }
+    background-color: #b1d240; }
     #banner-main .row .left-col {
       padding-right: 8.4rem; }
       @media screen and (max-width: 1200px) {
@@ -1132,5 +1132,43 @@ footer {
   @media screen and (max-width: 960px) {
     footer {
       padding: 5rem 0 2rem; } }
+
+#pricing-plan .row h2 {
+  text-align: left;
+  margin-bottom: 2.7rem; }
+@media screen and (max-width: 992px) {
+  #pricing-plan .row .plan-image {
+    display: none; } }
+#pricing-plan .row .plan-features {
+  padding-top: 3.8rem; }
+  @media screen and (max-width: 450px) {
+    #pricing-plan .row .plan-features {
+      padding-top: 0; } }
+  #pricing-plan .row .plan-features ul {
+    list-style: none; }
+    #pricing-plan .row .plan-features ul li {
+      font-family: 'Montserrat Light', sans-serif;
+      font-size: 1.4rem;
+      line-height: 1;
+      margin-bottom: 1.1rem;
+      color: #333945; }
+      #pricing-plan .row .plan-features ul li:before {
+        content: "\2605";
+        margin-right: 1.5rem;
+        color: #95165b;
+        font-size: 0.9rem;
+        vertical-align: middle;
+        display: inline-block;
+        -webkit-transform: rotate(30deg);
+        -moz-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        transform: rotate(30deg); }
+      #pricing-plan .row .plan-features ul li span {
+        color: #95165b; }
+#pricing-plan .row .plan-description {
+  padding-top: 3.8rem; }
+#pricing-plan .btn-full {
+  margin: 2.7rem auto 5.8rem; }
 
 /*# sourceMappingURL=style.css.map */
