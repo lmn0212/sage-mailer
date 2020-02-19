@@ -508,7 +508,7 @@ header .navbar {
           left: -12%; } }
       @media screen and (max-width: 350px) {
         #pricing .price-carousel .slick-prev {
-          right: -7%; } }
+          left: -7%; } }
     #pricing .price-carousel .slick-next {
       right: -6%; }
       #pricing .price-carousel .slick-next::before {
