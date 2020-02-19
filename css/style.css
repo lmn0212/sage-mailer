@@ -439,11 +439,20 @@ header .navbar {
           margin-bottom: 1.4rem; } }
     #principles .row .video-container {
       position: relative; }
-      #principles .row .video-container img {
+      #principles .row .video-container #plane-img {
         position: absolute;
         right: 4%;
         top: 0;
         height: 8.9rem; }
+      #principles .row .video-container #video-scr {
+        margin-top: 5rem;
+        border-radius: .3rem;
+        height: 100%;
+        width: 90%;
+        z-index: 1; }
+        @media screen and (max-width: 1200px) {
+          #principles .row .video-container #video-scr {
+            width: 100%; } }
       #principles .row .video-container video {
         margin-top: 5rem;
         border-radius: .3rem;
