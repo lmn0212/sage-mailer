@@ -367,7 +367,7 @@ header {
 #banner-main {
   margin-bottom: 2.5rem;
   .row {
-    background-color: rgb(177,210,64);
+    background-color: rgb(185,216,74);
     .left-col {
       padding-right: 8.4rem;
       @media screen and (max-width: 1200px) {
@@ -396,15 +396,21 @@ header {
       video {
         border-radius: .3rem;
         height: auto;
-        width: 100%;
-        max-height: 445px;
-        @media screen and (max-width: 1600px) {
-          width: 100%;
+        max-height: 446px;
+        border: 1px solid;
+        @media screen and (max-width: 1620px) {
+          max-height: 370px;
+        }
+        @media screen and (max-width: 1200px) {
+          max-height: 315px;
         }
         @media screen and (max-width: 960px) {
-          height: 230px;
+          height: 245px;
           align-self: center;
         }
+      }
+      @media screen and (max-width: 960px) {
+        display: flex;
       }
       @media screen and (max-width: 767px) {
         display: none!important;

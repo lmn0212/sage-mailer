@@ -315,7 +315,7 @@ header .navbar {
 #banner-main {
   margin-bottom: 2.5rem; }
   #banner-main .row {
-    background-color: #b1d240; }
+    background-color: #b9d84a; }
     #banner-main .row .left-col {
       padding-right: 8.4rem; }
       @media screen and (max-width: 1200px) {
@@ -337,15 +337,21 @@ header .navbar {
     #banner-main .row .video-container video {
       border-radius: .3rem;
       height: auto;
-      width: 100%;
-      max-height: 445px; }
-      @media screen and (max-width: 1600px) {
+      max-height: 446px;
+      border: 1px solid; }
+      @media screen and (max-width: 1620px) {
         #banner-main .row .video-container video {
-          width: 100%; } }
+          max-height: 370px; } }
+      @media screen and (max-width: 1200px) {
+        #banner-main .row .video-container video {
+          max-height: 315px; } }
       @media screen and (max-width: 960px) {
         #banner-main .row .video-container video {
-          height: 230px;
+          height: 245px;
           align-self: center; } }
+    @media screen and (max-width: 960px) {
+      #banner-main .row .video-container {
+        display: flex; } }
     @media screen and (max-width: 767px) {
       #banner-main .row .video-container {
         display: none !important; } }
