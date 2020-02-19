@@ -176,7 +176,7 @@ header .navbar {
         width: 19rem; } }
     @media screen and (max-width: 350px) {
       header .navbar .logo-block {
-        width: 11rem; } }
+        width: 17rem; } }
     header .navbar .logo-block img {
       max-height: 110px; }
   header .navbar .navbar-toggler {
@@ -188,7 +188,8 @@ header .navbar {
     @media screen and (max-width: 450px) {
       header .navbar .navbar-toggler {
         width: 75px;
-        height: 75px; } }
+        height: 75px;
+        margin-right: 1%; } }
     header .navbar .navbar-toggler span {
       display: block;
       background-color: #333;
@@ -207,7 +208,8 @@ header .navbar {
         margin: 10px 0 10px auto; }
         @media screen and (max-width: 450px) {
           header .navbar .navbar-toggler #hamburger span {
-            margin: 7px 0 7px auto; } }
+            margin: 7px 0 7px auto;
+            top: 27px; } }
         header .navbar .navbar-toggler #hamburger span:nth-child(1) {
           width: 71px;
           transition-delay: .5s; }
