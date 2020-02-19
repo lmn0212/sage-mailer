@@ -94,6 +94,13 @@ h2 {
 .painted-block {
   padding: 2.8rem 2.5rem 4.4rem;
   border-radius: 2rem; }
+  @media screen and (max-width: 767px) {
+    .painted-block {
+      border-radius: 0; } }
+  @media screen and (max-width: 350px) {
+    .painted-block {
+      border-radius: 0;
+      padding: 1.8rem 0.5rem 2.4rem; } }
 
 .browserupgrade {
   margin: 0.2em 0;
@@ -155,6 +162,9 @@ header .navbar {
   @media screen and (max-width: 767px) {
     header .navbar {
       margin: 0 0 4.2rem; } }
+  @media screen and (max-width: 767px) {
+    header .navbar {
+      margin: 0 0 2.2rem; } }
   header .navbar .logo-block {
     width: 24rem;
     margin-right: 4rem; }
@@ -164,6 +174,9 @@ header .navbar {
     @media screen and (max-width: 960px) {
       header .navbar .logo-block {
         width: 19rem; } }
+    @media screen and (max-width: 350px) {
+      header .navbar .logo-block {
+        width: 11rem; } }
     header .navbar .logo-block img {
       max-height: 110px; }
   header .navbar .navbar-toggler {
@@ -172,6 +185,10 @@ header .navbar {
     position: relative;
     cursor: pointer;
     margin-right: 2%; }
+    @media screen and (max-width: 450px) {
+      header .navbar .navbar-toggler {
+        width: 75px;
+        height: 75px; } }
     header .navbar .navbar-toggler span {
       display: block;
       background-color: #333;
@@ -188,24 +205,40 @@ header .navbar {
         right: 15%;
         height: 5px;
         margin: 10px 0 10px auto; }
+        @media screen and (max-width: 450px) {
+          header .navbar .navbar-toggler #hamburger span {
+            margin: 7px 0 7px auto; } }
         header .navbar .navbar-toggler #hamburger span:nth-child(1) {
           width: 71px;
           transition-delay: .5s; }
+          @media screen and (max-width: 450px) {
+            header .navbar .navbar-toggler #hamburger span:nth-child(1) {
+              width: 60px; } }
         header .navbar .navbar-toggler #hamburger span:nth-child(2) {
           width: 66px;
           transition: .25s ease-in-out;
           box-sizing: border-box;
           transition-delay: .625s; }
+          @media screen and (max-width: 450px) {
+            header .navbar .navbar-toggler #hamburger span:nth-child(2) {
+              width: 53px; } }
         header .navbar .navbar-toggler #hamburger span:nth-child(3) {
           width: 58px;
           transition: .25s ease-in-out;
           box-sizing: border-box;
           transition-delay: .75s; }
+          @media screen and (max-width: 450px) {
+            header .navbar .navbar-toggler #hamburger span:nth-child(3) {
+              width: 48px; } }
     header .navbar .navbar-toggler #cross {
       position: absolute;
       height: 100%;
       width: 100%;
       transform: rotate(45deg); }
+      @media screen and (max-width: 450px) {
+        header .navbar .navbar-toggler #cross {
+          height: 90%;
+          width: 90%; } }
       header .navbar .navbar-toggler #cross span:nth-child(1) {
         height: 0;
         width: 5px;
@@ -213,6 +246,9 @@ header .navbar {
         top: 20%;
         right: 45%;
         transition-delay: 0s; }
+        @media screen and (max-width: 450px) {
+          header .navbar .navbar-toggler #cross span:nth-child(1) {
+            right: 32%; } }
       header .navbar .navbar-toggler #cross span:nth-child(2) {
         width: 0;
         height: 5px;
@@ -220,6 +256,9 @@ header .navbar {
         right: 10%;
         top: 60%;
         transition-delay: .25s; }
+        @media screen and (max-width: 450px) {
+          header .navbar .navbar-toggler #cross span:nth-child(2) {
+            right: 0; } }
     header .navbar .navbar-toggler.open #hamburger span {
       width: 0%; }
       header .navbar .navbar-toggler.open #hamburger span:nth-child(1) {
@@ -293,11 +332,33 @@ header .navbar {
         margin-bottom: 6rem; }
       #banner-main .row .left-col .buttons-block .btn-full {
         margin-right: 1.8rem; }
+    #banner-main .row .video-container video {
+      border-radius: .3rem;
+      height: auto;
+      width: 100%;
+      max-height: 445px; }
+      @media screen and (max-width: 1600px) {
+        #banner-main .row .video-container video {
+          width: 100%; } }
+      @media screen and (max-width: 960px) {
+        #banner-main .row .video-container video {
+          height: 230px;
+          align-self: center; } }
+    @media screen and (max-width: 767px) {
+      #banner-main .row .video-container {
+        display: none !important; } }
 
 #solutions h2 {
   margin-bottom: 3.2rem; }
   #solutions h2 span {
     font-size: 2.4rem; }
+  @media screen and (max-width: 767px) {
+    #solutions h2 {
+      padding-left: 3.75rem;
+      text-align: left; } }
+  @media screen and (max-width: 350px) {
+    #solutions h2 {
+      padding-left: 1.75rem; } }
 #solutions .info-bl {
   margin-bottom: 4rem; }
   #solutions .info-bl .icon-col {
@@ -327,6 +388,9 @@ header .navbar {
         -moz-box-shadow: none;
         box-shadow: none;
         width: 90%; } }
+    @media screen and (max-width: 350px) {
+      #solutions .info-bl .info-container {
+        padding: 1.5rem 0; } }
     #solutions .info-bl .info-container h3 {
       font-family: "Rockwell", serif;
       font-size: 2.4rem;
@@ -345,6 +409,9 @@ header .navbar {
       margin-bottom: 3.7rem;
       text-align: justify;
       word-spacing: .1rem; }
+      @media screen and (max-width: 350px) {
+        #solutions .info-bl .info-container .info-text {
+          margin-bottom: 1.7rem; } }
     #solutions .info-bl .info-container .info-link {
       color: #95165b;
       text-decoration: underline;
@@ -381,8 +448,18 @@ header .navbar {
 
 #pricing {
   margin-bottom: 4rem; }
+  @media screen and (max-width: 350px) {
+    #pricing {
+      margin-bottom: 3rem; } }
   #pricing h2 {
     margin-bottom: 7.7rem; }
+    @media screen and (max-width: 767px) {
+      #pricing h2 {
+        padding-left: 3.75rem;
+        text-align: left; } }
+    @media screen and (max-width: 350px) {
+      #pricing h2 {
+        padding-left: 1.75rem; } }
   @media screen and (max-width: 767px) {
     #pricing .row {
       display: none; } }
@@ -396,13 +473,20 @@ header .navbar {
     @media screen and (max-width: 767px) {
       #pricing .wrap-car {
         display: block; } }
+    @media screen and (max-width: 350px) {
+      #pricing .wrap-car {
+        height: 600px; } }
   #pricing .price-carousel {
     display: none;
     width: 70%;
     margin: 0 auto; }
     @media screen and (max-width: 767px) {
       #pricing .price-carousel {
-        display: block; } }
+        display: block;
+        width: calc(100% - 7.5rem); } }
+    @media screen and (max-width: 350px) {
+      #pricing .price-carousel {
+        width: calc(100% - 3.5rem); } }
     #pricing .price-carousel .slick-list {
       padding: 2rem 0 !important; }
     #pricing .price-carousel .slick-arrow {
@@ -410,14 +494,29 @@ header .navbar {
       top: 20%;
       color: white;
       font-size: 15rem; }
+      @media screen and (max-width: 350px) {
+        #pricing .price-carousel .slick-arrow {
+          font-size: 11rem; } }
     #pricing .price-carousel .slick-prev {
-      left: -12%; }
+      left: -6%; }
       #pricing .price-carousel .slick-prev::before {
         content: "\2039"; }
+      @media screen and (max-width: 567px) {
+        #pricing .price-carousel .slick-prev {
+          left: -12%; } }
+      @media screen and (max-width: 350px) {
+        #pricing .price-carousel .slick-prev {
+          right: -7%; } }
     #pricing .price-carousel .slick-next {
-      right: -12%; }
+      right: -6%; }
       #pricing .price-carousel .slick-next::before {
         content: "\203A"; }
+      @media screen and (max-width: 567px) {
+        #pricing .price-carousel .slick-next {
+          right: -12%; } }
+      @media screen and (max-width: 350px) {
+        #pricing .price-carousel .slick-next {
+          right: -7%; } }
   #pricing .price-bl {
     width: 24%;
     border-radius: .3rem;
@@ -464,6 +563,9 @@ header .navbar {
             #pricing .price-bl .price-wrap .img-block img {
               height: 320px;
               margin: 0 auto; } }
+          @media screen and (max-width: 210px) {
+            #pricing .price-bl .price-wrap .img-block img {
+              height: 210px; } }
       #pricing .price-bl .price-wrap .price {
         text-align: center;
         font-size: 3.2rem;
@@ -483,6 +585,15 @@ header .navbar {
         @media screen and (max-width: 1620px) {
           #pricing .price-bl .price-wrap .btn-full {
             width: 80%; } }
+        @media screen and (max-width: 350px) {
+          #pricing .price-bl .price-wrap .btn-full {
+            margin: 3rem auto 0; } }
+      @media screen and (max-width: 1200px) {
+        #pricing .price-bl .price-wrap {
+          padding: 5.4rem 2rem; } }
+      @media screen and (max-width: 320px) {
+        #pricing .price-bl .price-wrap {
+          padding: 3.4rem 2rem; } }
     #pricing .price-bl:last-of-type .price-wrap .btn-full {
       background-color: #b9c95e;
       border-color: #b9c95e;
@@ -494,11 +605,25 @@ header .navbar {
 
 #flags {
   margin-bottom: 6.2rem; }
+  @media screen and (max-width: 350px) {
+    #flags {
+      margin-bottom: 4.2rem; } }
   #flags h2 {
     margin-bottom: 6.8rem; }
+    @media screen and (max-width: 767px) {
+      #flags h2 {
+        padding-left: 3.75rem;
+        text-align: left; } }
+    @media screen and (max-width: 350px) {
+      #flags h2 {
+        padding-left: 1.75rem; } }
   @media screen and (max-width: 1200px) {
     #flags .row {
-      width: 70%;
+      width: calc(100% - 7rem);
+      margin: 0 auto; } }
+  @media screen and (max-width: 1200px) {
+    #flags .row {
+      width: calc(100% - 3.5rem);
       margin: 0 auto; } }
   #flags .row .flag {
     width: 77px;
@@ -635,8 +760,18 @@ header .navbar {
 
 #try-prop {
   margin-bottom: 8.7rem; }
+  @media screen and (max-width: 350px) {
+    #try-prop {
+      margin-bottom: 4.7rem; } }
   #try-prop .row {
     margin: 0 auto; }
+    @media screen and (max-width: 767px) {
+      #try-prop .row {
+        padding-left: 3.75rem;
+        text-align: left; } }
+    @media screen and (max-width: 350px) {
+      #try-prop .row {
+        padding-left: 1.75rem; } }
     #try-prop .row .illustration img {
       max-height: 413px; }
     @media screen and (max-width: 767px) {
@@ -687,17 +822,32 @@ header .navbar {
     @media screen and (max-width: 1620px) {
       #try-prop .row .chooser .btn-container .btn-full {
         width: 48%; } }
+    @media screen and (max-width: 450px) {
+      #try-prop .row .chooser .btn-container .btn-full {
+        width: 80%; } }
     #try-prop .row .chooser .remark {
       margin-left: 1.5rem; }
       @media screen and (max-width: 767px) {
         #try-prop .row .chooser .remark {
           display: none; } }
 
+@media screen and (max-width: 767px) {
+  #testimonials h2 {
+    padding-left: 3.75rem;
+    text-align: left; } }
+@media screen and (max-width: 350px) {
+  #testimonials h2 {
+    padding-left: 1.75rem; } }
 #testimonials .testimonials-car .slick-list {
   padding: 8rem 0 !important; }
   @media screen and (max-width: 767px) {
     #testimonials .testimonials-car .slick-list {
       padding: 2rem 4rem !important;
+      background-color: #edf1d7;
+      margin-left: -1.5rem; } }
+  @media screen and (max-width: 350px) {
+    #testimonials .testimonials-car .slick-list {
+      padding: 2rem 3rem !important;
       background-color: #edf1d7;
       margin-left: -1.5rem; } }
   #testimonials .testimonials-car .slick-list::after {
@@ -741,7 +891,7 @@ header .navbar {
     opacity: 0.8;
     position: relative;
     z-index: 1; }
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 1600px) {
       #testimonials .testimonials-car .testimon.slick-current {
         padding: 7rem 3rem 0; } }
     @media screen and (max-width: 767px) {
@@ -751,15 +901,25 @@ header .navbar {
   #testimonials .testimonials-car .testimon .icon-col {
     padding: 0 .5rem;
     width: 23%; }
+    @media screen and (max-width: 767px) {
+      #testimonials .testimonials-car .testimon .icon-col img {
+        width: 50%;
+        max-height: 150px; } }
     #testimonials .testimonials-car .testimon .icon-col .img-name {
       display: none;
       font-family: 'Rockwell Bold', serif;
-      font-size: 1rem;
+      width: 50%;
+      font-size: 1.2rem;
       text-align: right;
       margin: 2rem 0 4rem; }
       @media screen and (max-width: 767px) {
         #testimonials .testimonials-car .testimon .icon-col .img-name {
           display: block; } }
+    @media screen and (max-width: 767px) {
+      #testimonials .testimonials-car .testimon .icon-col {
+        width: 100%;
+        display: flex;
+        align-items: baseline; } }
   #testimonials .testimonials-car .testimon .ad-container {
     padding: 0 .5rem;
     width: 77%;
@@ -771,11 +931,23 @@ header .navbar {
       text-align: right;
       display: block;
       margin: 2rem 0 4rem; }
+      @media screen and (max-width: 1620px) {
+        #testimonials .testimonials-car .testimon .ad-container .name {
+          margin: 2rem 0 3rem; } }
       @media screen and (max-width: 767px) {
         #testimonials .testimonials-car .testimon .ad-container .name {
           display: none; } }
     #testimonials .testimonials-car .testimon .ad-container img {
       width: 150px; }
+      @media screen and (max-width: 1620px) {
+        #testimonials .testimonials-car .testimon .ad-container img {
+          width: 130px; } }
+      @media screen and (max-width: 767px) {
+        #testimonials .testimonials-car .testimon .ad-container img {
+          margin: 2rem auto 0; } }
+    @media screen and (max-width: 767px) {
+      #testimonials .testimonials-car .testimon .ad-container {
+        width: 100%; } }
   #testimonials .testimonials-car .testimon:focus {
     outline: none; }
 #testimonials .testimonials-car .slick-arrow {
@@ -823,6 +995,9 @@ header .navbar {
 
 #faq {
   margin-bottom: 6.4rem; }
+  @media screen and (max-width: 350px) {
+    #faq {
+      margin-bottom: 3.4rem; } }
   #faq .row {
     background-color: #95165b; }
     #faq .row h2 {
@@ -834,6 +1009,9 @@ header .navbar {
         #faq .row #monitoring-img {
           margin: 0 auto;
           display: block; } }
+      @media screen and (max-width: 350px) {
+        #faq .row #monitoring-img {
+          height: 260px; } }
     #faq .row .question-group {
       color: white;
       margin-top: 1.7rem; }
@@ -848,6 +1026,9 @@ header .navbar {
         font-size: 1.15rem;
         padding: 1.1rem 5.1rem 1rem;
         text-align: justify; }
+        @media screen and (max-width: 450px) {
+          #faq .row .question-group .question p {
+            padding: 1.1rem 1.1rem 1rem; } }
       #faq .row .question-group .question:first-of-type .arrow-collapse, #faq .row .question-group .question:nth-of-type(2) .arrow-collapse {
         transform: rotate(90deg); }
 
@@ -858,6 +1039,13 @@ header .navbar {
     #banner-ad h2 span {
       font-family: 'Rockwell Bold', serif;
       color: #95165b; }
+    @media screen and (max-width: 767px) {
+      #banner-ad h2 {
+        padding-left: 3.75rem;
+        text-align: left; } }
+    @media screen and (max-width: 350px) {
+      #banner-ad h2 {
+        padding-left: 1.75rem; } }
   #banner-ad .ad-bl {
     margin-bottom: 5rem; }
     #banner-ad .ad-bl .icon-col {
@@ -893,6 +1081,12 @@ header .navbar {
     @media screen and (max-width: 960px) {
       #banner-ad .btn-full {
         width: 30%; } }
+    @media screen and (max-width: 767px) {
+      #banner-ad .btn-full {
+        width: 40%; } }
+    @media screen and (max-width: 450px) {
+      #banner-ad .btn-full {
+        width: 50%; } }
 
 footer {
   background-color: #333945;
