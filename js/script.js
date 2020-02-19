@@ -18,8 +18,8 @@ $(document).ready(function(){
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: true,
-                    prevArrow:"<div class='slick-prev'><img src='../../../media/img/arrow.svg' alt='prev'></div>",
-                    nextArrow:"<div class='slick-next'><img src='../../../media/img/arrow.svg' alt='next'></div>",
+                    prevArrow:"<div class='slick-prev'><img src='media/img/arrow.svg' alt='prev'></div>",
+                    nextArrow:"<div class='slick-next'><img src='media/img/arrow.svg' alt='next'></div>",
                 }
             },
         ]
