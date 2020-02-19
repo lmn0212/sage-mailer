@@ -125,6 +125,8 @@ h2 {
   @media screen and (max-width: 767px) {
     .btn-full {
       width: 160px; } }
+  .btn-full:hover {
+    color: white; }
 
 .btn-empty {
   font-size: 1.2rem;
