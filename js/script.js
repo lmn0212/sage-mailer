@@ -6,11 +6,13 @@ $(document).ready(function(){
     $('.testimonials-car').slick({
         centerMode: true,
         centerPadding: '0',
+        infinite:true,
         slidesToShow: 3,
         slidesToScroll: 1,
-        speed: 200,
+        focusOnSelect: true,
+        speed: 800,
         arrows: false,
-        easing: 'easeInCubic',
+        easing: 'easeOutCubic',
         responsive: [
             {
                 breakpoint: 767,

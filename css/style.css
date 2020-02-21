@@ -69,7 +69,8 @@ ul {
 a {
   color: #484848;
   text-decoration: none;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  cursor: pointer; }
   a:hover {
     color: #95165b;
     text-decoration: none; }
@@ -342,8 +343,7 @@ header .navbar {
     #banner-main .row .video-container video {
       border-radius: .3rem;
       height: auto;
-      max-height: 446px;
-      border: 1px solid; }
+      width: 100%; }
       @media screen and (max-width: 1620px) {
         #banner-main .row .video-container video {
           max-height: 370px; } }
@@ -512,7 +512,8 @@ header .navbar {
       position: absolute;
       top: 20%;
       color: white;
-      font-size: 15rem; }
+      font-size: 15rem;
+      cursor: pointer; }
       @media screen and (max-width: 350px) {
         #pricing .price-carousel .slick-arrow {
           font-size: 11rem; } }
@@ -975,7 +976,8 @@ header .navbar {
   color: white;
   width: 2rem;
   height: 2rem;
-  z-index: 2; }
+  z-index: 2;
+  cursor: pointer; }
 #testimonials .testimonials-car .slick-prev {
   left: 3%;
   top: 45%;
@@ -1161,6 +1163,8 @@ footer {
         width: 36px; }
       footer .contacts ul li a {
         color: white; }
+        footer .contacts ul li a:hover {
+          color: #95165b; }
   footer .copyright {
     margin-top: 4.5rem;
     text-align: center; }
