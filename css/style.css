@@ -343,7 +343,8 @@ header .navbar {
     #banner-main .row .video-container video {
       border-radius: .3rem;
       height: auto;
-      width: 100%; }
+      width: 100%;
+      max-height: 470px; }
       @media screen and (max-width: 1620px) {
         #banner-main .row .video-container video {
           max-height: 370px; } }
