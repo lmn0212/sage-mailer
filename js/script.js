@@ -10,7 +10,6 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         focusOnSelect: true,
-        speed: 800,
         arrows: false,
         easing: 'easeOutCubic',
         responsive: [

@@ -945,11 +945,16 @@ header {
         }
       }
     }
-    .testimon {
+    .testimon,
+    .slick-slide[aria-hidden="true"]:not(.slick-cloned) ~ .slick-cloned[aria-hidden="true"] {
       width: 300px;
       padding: 5.6rem 3rem;
       opacity: 0.4;
       background-color: white;
+      cursor: pointer;
+      transform: scale(1);
+      transition: transform 0.4s;
+      transition-delay: 0.3s;
       @media screen and (max-width: 1200px) {
         padding: 5.6rem 3rem 4rem;
 
@@ -959,12 +964,14 @@ header {
         margin-left: 1.5rem;
         border-radius: 1rem;
       }
-      &.slick-current {
+      &.slick-current,
+      &.slick-slide[aria-hidden="true"]:not([tabindex="-1"]) + .slick-cloned[aria-hidden="true"] {
         transform: scale(1.4);
         padding: 6.6rem 3rem 1rem;
         opacity: 0.8;
         position: relative;
         z-index: 1;
+        cursor: initial;
         @media screen and (max-width: 1600px) {
           padding: 7rem 3rem 0;
         }
@@ -1156,6 +1163,7 @@ header {
           font-family: 'Rockwell', serif;
           font-size: 1.15rem;
           line-height: 1;
+          cursor: pointer;
           @media screen and (max-width: 450px) {
             line-height: 1.3;
           }
